@@ -1,0 +1,156 @@
+body{
+    padding: 10%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#dicecontainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 150px; 
+}
+
+body > * {
+    margin-bottom: 5px; 
+}
+
+#formNameToBeDisabled > * {
+    margin-bottom: 10px; 
+}
+
+#buttonPlay, #buttonPass{
+    margin-left: 50%;
+    margin-right: 50%;
+}
+
+#formNameToBeDisabled {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#flexit {
+    display: flex;
+    justify-content: space-around;
+}
+
+#formplayer1, #formplayer2 {
+    flex: 1; 
+    margin: 0 10px;
+}
+
+
+h, p, button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#centerit {
+    margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#centerit > * {
+    margin-bottom: 10px;
+}
+
+#dicecontainer {
+    margin-top: 40px;
+}
+
+.die{
+    padding: 1%;
+    width: 15%;
+    aspect-ratio: 1/1;
+    border-radius: 5%;
+    border: 2px solid gray;
+    background: hsl(40, 30%, 98%);
+    display: flex;
+}
+
+/* dots */
+.die div{
+    background: black;
+    border-radius: 50%;
+    width: 25%;
+    aspect-ratio: 1/1;
+}
+
+/* one */
+.one{
+    justify-content: center;
+    align-items: center;
+}
+
+/* two */
+.two{
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* three */
+.three{
+    justify-content: space-around;
+    align-items: center;
+}
+.three > :first-child{
+    align-self: flex-start;
+}
+.three > :last-child{
+    align-self: flex-end;
+}
+
+/* four */
+.four{
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-flow: row wrap;
+}
+.four > :first-child, .four > :nth-child(2){
+    align-self: flex-start;
+}
+.four > :first-child, .four > :nth-child(3){
+    margin-right: 50%;
+}
+
+/* five */
+.five{
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-flow: row wrap;
+}
+.five > :first-child, .five > :nth-child(4){
+    margin-right: 50%;
+}
+.five > :nth-child(3){
+    margin: 0 37.5%;
+    justify-self: center;
+    align-self: center;
+}
+.five > :last-child, .five > :nth-child(4){
+    align-self: flex-end;
+}
+
+/* six */
+.six{
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-flow: row wrap;
+}
+.six > :nth-child(2n+1){
+    margin-right: 50%;
+}
+.six > :nth-child(3), .six > :nth-child(4){
+    align-self: center;
+}
+.six > :nth-child(5), .six > :last-child{
+    align-self: flex-end;
+}

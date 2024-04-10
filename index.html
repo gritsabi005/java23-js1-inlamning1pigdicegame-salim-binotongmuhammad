@@ -1,0 +1,80 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="./style.css"> 
+</head>
+<body>
+    <h id="hGame">Welcome to Pig Dice game! Pig it!</h>
+    <br> 
+    <p id="winningMessage"></p>
+    <br>
+    <form id="formNameToBeDisabled">
+        <input type="text" id="inputName" placeholder="Player 1" required>
+        <input type="text" id="inputName2" placeholder="Player 2">
+        <br>
+        <button id="buttonSubmitName">Play</button> 
+    </form>  
+    <div id = "flexit">
+    <form id="formplayer1">
+    <p id="pGame">Hi</p>
+    <p id="totalScoreMessage">Your total score: </p>
+    <p id="currentScoreMessage">Your current score: </p>
+    </form>
+    <form id="formplayer2">
+        <p id="pGame2">Hi</p>
+        <p id="totalScoreMessage2">Your total score: </p>
+        <p id="currentScoreMessage2">Your current score: </p>
+    </form>
+    </div>
+    <br>
+    <div id="formNameToBeDisabled">
+    <button id="buttonPlay">Throw</button> 
+    <button id="buttonPass">Pass</button>
+    </div>
+
+    <div id="dicecontainer">
+        <div class="die one" id="dieOne" style="display: none;">
+            <div></div>
+        </div>
+        <div class="die two" id="dieTwo" style="display: none;">
+            <div></div>
+            <div></div>
+        </div>
+        <div class="die three" id="dieThree" style="display: none;">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div class="die four" id="dieFour" style="display: none;">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div class="die five" id="dieFive" style="display: none;">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div class="die six" id="dieSix" style="display: none;">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+    <div class = "hallOfFame" id = "hallOfFame" style="display: none;">
+    </div>
+    <br>
+    
+</body>
+</html>
